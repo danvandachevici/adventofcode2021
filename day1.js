@@ -27,5 +27,6 @@ function getFalls(input, windowSize) {
 
 fs.readFile('./inputs/day1.txt').then((data) => {
   const input = data.toString().split('\n');
-  console.log('Falls:', getFalls(input, 1));
+  console.log('1-sum window:', getFalls(input, 1));
+  console.log('3-sum window:', getFalls(input, 3));
 });
